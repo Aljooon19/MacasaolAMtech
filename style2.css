@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+}
+  
+
+/*Nav Style*/
+.Navbar nav{
+   background:#754ef9;
+   height: 80px;
+   width:100%;
+}
+
+label.logo{
+   color: #fff;
+   font-size: 35px;
+   line-height: 90px;
+   padding-left: 50px;
+   font-weight: bold;
+}
+
+label.logo a{
+   background: none;
+   text-decoration: none;
+}
+
+label.logo span{
+   color: grey;
+   font-size: 35px;
+   line-height: 20px;
+   font-weight: bold;
+   padding: 10px 10px;
+   border-radius: 5px;
+   margin: 0 7px;
+}
+
+span.active{
+   border-radius: 10px;
+   background: black;
+}
+
+
+nav ul{
+   float: right;
+   margin: right;
+  
+}
+
+  nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 2px;
+}
+
+nav ul li a{
+   color: white;
+   font-size: 16px;
+   padding: 8px 20px;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+a.active{
+   background: black;
+}
+
+a:hover{
+   background: grey;
+   color: white;
+   transition: .5s;
+}
+
+nav #icon{
+   color: #FFA500;
+   font-size: 30px;
+   line-height: 80px;
+   float: right;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+}
+
+
+/*Responsive Page*/
+@media screen and (max-width:900px){
+   
+   .Navbar nav{
+      height: 80px;
+      z-index: 9999;
+   }
+   label.logo{
+      font-size: 20px;
+      padding-left: 40px;
+    
+   }
+
+   label.logo span{
+      font-size: 20px;
+      padding: 0 15px;
+   }
+   
+   nav #icon{
+      display: block;
+      font-size: 20px;
+   }
+
+   nav ul{
+      width: 100%;
+      background: #333;
+      top: 32px;
+      left:-100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 1;
+   }
+   nav ul li {
+      display: block;
+      margin: 5px 0;
+      line-height: 30px;
+   }
+
+
+   a.active,a:hover{
+      border: none;
+      color:white
+   }
+
+   nav ul.show{
+      left: 0;
+   }
+}
+
+
+/*Home*/
+header{
+   width: 100%;
+   height: 90vh;
+   background-image: url(AMtech\ LOGO.jpeg);
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   
+}
+
+.Header-Content{
+   padding-left: 50px;
+   margin: 100px 0 0 0;
+   color: #754ef9;
+}
+
+.Header-Content h1{
+   color:white;
+}
+
+.Header-Content h4{
+   font-size: 3vmin;
+   text-shadow: 3px 3px 6px ;
+   overflow: hidden; 
+   border-right: 2px transparent; 
+   white-space: nowrap;
+   margin: 0 auto; 
+   letter-spacing: 5px; 
+   animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing {
+   from { width: 0 }
+   to { width: 100% }
+}
+ 
+
+ @keyframes blink-caret {
+   from, to { border-color: transparent }
+   50% { border-color: transparent; }
+}
+
+
+
+.Header-Pre h2{
+   color: white;
+   text-align: center;
+   padding-top: 50px;
+   font-size: 50px;
+   background-color: #754ef9;
+
+}
+
+.Preview{
+   padding-top: 30px;
+   color: white;
+   text-align: center; 
+   font-weight: bolder;
+   font-size: 30px; 
+}
+
+main.Sub{
+   background-color: #754ef9;
+   height: 450px;
+}
+
+.Hline{
+   width: 160px;
+   height: 5px;
+   background:white;
+   margin: 10px auto;
+   border-radius: 10px;
+}
+
+.Hline2{
+   width: 150px;
+   height: 5px;
+   background:#754ef9;
+   margin: 10px auto;
+   border-radius: 5px;
+}
+
+.container{
+   max-width: 1000px;
+   margin: auto;
+   overflow: auto;
+}
+
+.Pre-Sub{
+   margin: 0 10px;
+   border: 1px solid #111;
+   border-radius: 5px;
+   float: left;
+   width: 350px;
+   background-color: whitesmoke;
+   transition: transform 1s;
+   cursor: pointer;
+}
+
+.Pre-Sub a{
+   text-decoration: none;
+   background: none;
+}
+
+.Pre-Sub a img{
+   width: 100%;
+   height: 180px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.desc h3{
+   padding: 10px;
+   text-align: center;
+   color: #111;
+}
+
+.Pre-Sub:hover{
+   transform: rotateY(45deg);
+   border: 4px solid white;
+}
+
+.Pre-Act{
+   margin: 0 10px;
+   border: 2px solid #754ef9;
+   border-radius: 5px;
+   float: left;
+   width: 350px;
+   background-color: whitesmoke;
+   transition: transform 1s;
+   cursor: pointer;
+}
+
+.Pre-Act a{
+   text-decoration: none;
+   background: none;
+}
+
+.Pre-Act a img{
+   width: 100%;
+   height: 200px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.Pre-Act:hover{
+   transform: rotateX(45deg); 
+   border: 4px solid white;
+}
+
+.Lower{
+   background-color: #111;
+   height: 80vh;
+}
+.container{
+   display: flex;
+   text-align: center;
+   justify-content: space-between;
+   padding-top: 40px;
+}
+
+
+/*Blog*/
+
+.Blog{
+   background-color:white;
+   overflow-x: hidden;
+}
+
+
+.Subject{
+   padding: 10px 0;
+   text-align: center; 
+   font-weight: bolder;
+   font-size: 20px;
+}
+
+.Subject h2{
+   padding: 10px 0;
+   color:#111;
+   text-shadow: 5px 5px 7px gray;
+}
+
+
+.row{
+   display: flex;
+   height: 500px;
+   align-items: center;
+   justify-content: center;
+}
+
+.Acts{
+   margin: 20px 50px;
+   border: 2px solid #111;
+   width: 450px;
+   background-color:#2639a5;
+   box-shadow: 0px 0px 5px 5px #706e6e;   
+   transition: 0.8s ease;
+   cursor: pointer;
+}
+
+.Acts:hover{ 
+   transform: scale(1.1); 
+}
+
+
+
+.Acts img{
+   width: 100%;
+   height: 350px;
+}
+
+
+.Acts h3{
+   padding: 10px;
+   text-align: center;
+   color:whitesmoke;
+}
+
+.Acts p{
+   color:whitesmoke;
+   padding: 5px 10px;
+}
+
+.descp{
+   height: 590px;
+}
+
+.row{
+   margin: 100px auto;
+}
+

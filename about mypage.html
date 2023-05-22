@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <title>AMtech</title>
+  <style>
+  
+    
+    
+    /**/
+    #section{
+        background-color: rgb(246, 248, 248);
+    }
+#comments-section {
+  margin-top: 10px;
+}
+
+#comment-input {
+  width: 100%;
+}
+
+#comments {
+  margin-bottom: 5px;
+}
+
+.comment {
+  margin-bottom: 5px;
+  border: 1px solid #070707;
+  background-color: #f5f0f0;
+}
+  </style>
+</head>
+<body>
+  
+  <!--//NAVBAR-->
+  <nav class="navbar navbar-expand-lg bg-secondary navbar-light navbar-text-light py-2">
+    <div class="container">
+    <a href="#" class="navbar-brand"><h2 class="text-light">AMtech</h2></a>
+
+    <!--navbar-->
+      <button 
+      class="navbar-toggler" 
+      type="button"
+       data-bs-toggle="collapse" 
+      data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " 
+    id="navmenu">
+<ul class="navbar-nav ms-auto">
+  <li class="nav-item">
+    <a href="index.html" 
+    class="nav-link btn btn-secondary btn-sm text-light">Home</a>
+  </li>
+  <li class="nav-item">
+    <a href="feature page.html" 
+    class="nav-link btn btn-secondary btn-sm text-light">Feature</a>
+  </li>
+    
+  <li class="nav-item">
+    <a href="blogs.html" 
+    class="nav-link btn btn-secondary btn-sm text-light">Blog</a>
+  </li>
+  <li class="new-item">
+    <a href="about mypage.html"
+    class="nav-link btn btn-secondary btn-sm text-light">About My Website</a>
+  </li>
+</ul>
+</div>
+</div>
+</nav>
+
+
+      <!--section About myself-->
+      <section>
+        <div class="bg-warning">
+        <div class="container pt-5">
+                    
+                <div class="text-center">
+                    <img src="shrek.jpg"class="rounded w-25" alt=""/>
+                    <h4 class="card-title mb-3">Aljon Marc P. Macasaol</h4>
+                    <p class="card-text">
+                    <h5>Aljonmarc.macasaol11@gmail.com / Carcar City, Cebu</h5>
+                    
+                    
+                    <a href="https://www.facebook.com/aljonmarc.macasaol?mibextid=ZbWKwL" class ="bi bi-facebook text-dark mx-1"></a>
+                    <a href="https://instagram.com/aljonmarcc?igshid=ZGUzMzM3NWJiOQ==" class ="bi bi-instagram text-dark mx-1"></a>
+                    <a href="https://www.youtube.com/@AljonMarcMacasaol" class ="bi bi-youtube text-dark mx-1"></a></p>
+                        
+                    <!--other section-->
+                  <br>
+                    <div><h3 class="bg-dark text-light">AMtech About</h3></div>
+                    <h5>College is a whole lot more than simply taking the classes
+                         you need to complete your major and graduate with your degree. 
+                        You can also gain experience by making friends, taking extra curricular activities in school
+                         and you'll realize that being a student is fun.</h5>
+                         <br>
+<h3 class="bg-dark text-light">AMtech Goal</h3>
+<h5>Goals are like road maps, they get you from one point to another.
+     Goals provide the direction you need to reach your destination,
+     the motivation to sustain you on your trip, and a way to measure your progress. </h5>
+                  </div></span>
+            </div>
+            </div>
+      </section>
+      
+
+
+
+
+
+<!--comment section-->
+        <div class="text-dark">
+        <div id="section">
+        <div id="comments-section">
+            <h2 class="text-center">Comments:</h2>
+            <div id="comments"></div>
+            
+            <h5>Leave a Comment</h5>
+            <form id="comment-form">
+              <textarea id="comment-input" rows="4" placeholder="Write your comment..."></textarea>
+              <button type="submit">Comment</button>
+            </form></div>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          // Get the comment form and comments section elements
+          const commentForm = document.getElementById("comment-form");
+          const commentsSection = document.getElementById("comments");
+        
+          // Add an event listener to the comment form on submit
+          commentForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+        
+            // Get the comment input value
+            const commentInput = document.getElementById("comment-input");
+            const commentText = commentInput.value;
+        
+            if (commentText.trim() !== "") {
+              // Create a new comment element
+              const commentElement = document.createElement("div");
+              commentElement.classList.add("comment");
+              commentElement.textContent = commentText;
+        
+              // Append the new comment element to the comments section
+              commentsSection.appendChild(commentElement);
+        
+              // Clear the comment input
+              commentInput.value = "";
+            }
+          });
+        });
+        
+        </script>
+        </div>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <section class="pt-5 pb-5 bg-dark">
+        <div class="container text-center text-light">
+            <div class="row">
+                <div class="col">
+      
+                
+                <h4>Social Contact</h4>
+                <span>Aljonmarc.macasaol11@gmail.com</span>
+            </div>
+
+            <div class="col">
+                <h4>Social Media:</h4>
+                <div class="col">
+                    <a href="https://www.facebook.com/aljonmarc.macasaol?mibextid=ZbWKwL" 
+                class ="bi bi-facebook text-light mx-1">
+                <span><a href="https://www.facebook.com/aljonmarc.macasaol?mibextid=ZbWKwL">
+                    <i class="facebook"></i> Facebook</a></span>
+               </div>
+
+               <div class="col">
+                <a href="https://instagram.com/aljonmarcc?igshid=ZGUzMzM3NWJiOQ==" 
+                    class ="bi bi-instagram text-light mx-1"></a>
+               <span><a href="https://instagram.com/aljonmarcc?igshid=ZGUzMzM3NWJiOQ==">
+                <i class="instagram"></i> Instagram</a></span>
+                </div>
+
+               <div class="col">
+                <a href="https://www.youtube.com/@AljonMarcMacasaol" 
+                    class ="bi bi-youtube text-light mx-1"></a>
+               <span><a href="https://www.youtube.com/@AljonMarcMacasaol">
+                <i class="youtube"></i> YouTube</a></span>
+            </div>
+            </div>
+            
+                        
+            <div class="col">
+                <h4>Contact Me</h4>
+                <span>09693458911</span>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <span class="copyright"><em>©2023 Aljon Marc Macasaol</em></span>
+            <div class="col-md">
+              </div>
+        </div>
+      </div>
+            </div>
+        </section>
+
+     
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
